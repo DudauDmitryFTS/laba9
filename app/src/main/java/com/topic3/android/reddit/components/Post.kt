@@ -198,6 +198,16 @@ fun VotingAction(
   onDownVoteAction: () -> Unit
 ) {
   //TODO add your code here
+  Row(verticalAlignment = Alignment.CenterVertically) {
+    ArrowButton(onUpVoteAction, R.drawable.ic_baseline_arrow_upward_24)
+    Text(
+      text = text,
+      color = Color.Gray,
+      fontWeight = FontWeight.Medium,
+      fontSize = 12.sp
+    )
+    ArrowButton(onUpVoteAction, R.drawable.ic_baseline_arrow_upward_24)
+  }
 }
 
 @Composable
