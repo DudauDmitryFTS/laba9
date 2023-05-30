@@ -213,7 +213,7 @@ fun SubredditDescription(modifier: Modifier, @StringRes descriptionStringRes: In
 }
 
 @Composable
-fun Community(text: String, modifier: Modifier = Modifier) {
+fun Community(text: String, modifier: Modifier = Modifier,onCommunityClicked: () -> Unit = {}) {
     //TODO add your code here
     Row(
         modifier = modifier
